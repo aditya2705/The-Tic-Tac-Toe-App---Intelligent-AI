@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_exit"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top" >
+
+    <ImageView
+        android:id="@+id/dialogbox"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="center"
+        android:src="@drawable/dialogbox" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Are you sure you want to exit?"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
+</RelativeLayout>

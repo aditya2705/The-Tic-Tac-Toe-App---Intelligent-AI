@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top" >
+
+    <ImageView
+        android:id="@+id/dialogbox"
+        android:layout_width="300dp"
+        android:layout_height="210dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="center"
+        android:src="@drawable/dialogbox" />
+
+    <EditText
+        android:id="@+id/playerTwo"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignLeft="@+id/playerOne"
+        android:ems="10"
+        android:hint="Player 2" >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/playerOne"
+        android:layout_marginTop="34dp"
+        android:text="Player O:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/playerOne"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignRight="@+id/dialogbox"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="Player 1" >
+        
+        <requestFocus />
+	</EditText>
+
+    <RadioGroup
+        android:id="@+id/chooseFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dialogbox"
+        android:layout_alignRight="@+id/playerTwo"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/firstX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="X"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/firstO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="O"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/alternate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="XO"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/firstChance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chooseFirst"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_marginBottom="15dp"
+        android:text="First Chance:"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dialogbox"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="15dp"
+        android:text="Player X:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+</RelativeLayout>

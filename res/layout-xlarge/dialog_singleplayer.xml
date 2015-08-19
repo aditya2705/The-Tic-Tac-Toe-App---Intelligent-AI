@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top" >
+
+    <ImageView
+        android:id="@+id/dialogbox"
+        android:layout_width="700dp"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="center"
+        android:src="@drawable/dialogbox" />
+
+    <EditText
+        android:id="@+id/playerTwo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignLeft="@+id/playerOne"
+        android:ems="10"
+        android:hint="Computer"
+        android:textSize="50sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/playerOne"
+        android:layout_marginTop="34dp"
+        android:text="Player Two:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+    <EditText
+        android:id="@+id/playerOne"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/TextView01"
+        android:ems="10"
+        android:hint="You"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dialogbox"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="86dp"
+        android:text="Player One:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+    <RadioGroup
+        android:id="@+id/difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playerTwo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:checked="true"
+            android:text="Easy"
+            android:textColor="#000000"
+            android:textSize="50sp" />
+
+        <RadioButton
+            android:id="@+id/medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            android:textColor="#000000"
+            android:textSize="50sp" />
+
+        <RadioButton
+            android:id="@+id/hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Hard"
+            android:textColor="#000000"
+            android:textSize="50sp" />
+    </RadioGroup>
+
+</RelativeLayout>

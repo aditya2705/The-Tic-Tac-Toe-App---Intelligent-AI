@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top" >
+
+    <ImageView
+        android:id="@+id/dialogbox"
+        android:layout_width="370dp"
+        android:layout_height="210dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="center"
+        android:src="@drawable/dialogbox" />
+
+    <TextView
+        android:id="@+id/endTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="WINNER: PLAYER"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/description"
+        android:layout_below="@+id/description"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="22dp"
+        android:text="- The Computer"
+        android:textColor="#000"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/endTitle"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/thumb"
+        android:text="ad arega rjhjH SJHjmW Nakbaj bajdgbmab sabrj barjg barbgk abgr"
+        android:textColor="#6B6B6B"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/thumb"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/description"
+        android:layout_marginLeft="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/tup" />
+
+</RelativeLayout>

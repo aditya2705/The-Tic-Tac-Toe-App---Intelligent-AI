@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/twoid"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <ImageView
+        android:id="@+id/backYellow"
+        android:layout_width="fill_parent"
+        android:layout_height="270dp"
+        android:scaleType="center"
+        android:src="@drawable/dialogbox" />
+
+    <Button
+        android:id="@+id/bluetoothPlay"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_alignBottom="@+id/backYellow"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/custom_bluetoothplay" />
+
+    <Button
+        android:id="@+id/passPlay"
+        android:layout_width="270dp"
+        android:layout_height="260dp"
+        android:layout_alignBottom="@+id/backYellow"
+        android:layout_toLeftOf="@+id/bluetoothPlay"
+        android:background="@drawable/custom_passnplay" />
+
+</RelativeLayout>

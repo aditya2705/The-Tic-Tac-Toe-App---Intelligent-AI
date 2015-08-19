@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ttt"
+    android:gravity="center_horizontal" >
+
+    <Button
+        android:id="@+id/btnNewGame"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_newgame"/>
+
+    <RelativeLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="37dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/otile13"
+            android:layout_width="85dp"
+            android:layout_height="135dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/blank" />
+
+        <ImageView
+            android:id="@+id/otile12"
+            android:layout_width="85dp"
+            android:layout_height="135dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="43dp"
+            android:layout_toLeftOf="@+id/otile13"
+            android:src="@drawable/blank" />
+
+        <ImageView
+            android:id="@+id/otile11"
+            android:layout_width="85dp"
+            android:layout_height="135dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:src="@drawable/blank" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/row1"
+        android:layout_marginTop="40dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/otile21"
+            android:layout_width="85dp"
+            android:layout_height="135dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/blank" />
+
+        <ImageView
+            android:id="@+id/otile23"
+            android:layout_width="85dp"
+            android:layout_height="135dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/blank" />
+
+        <ImageView
+            android:id="@+id/otile22"
+            android:layout_width="82dp"
+            android:layout_height="135dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="44dp"
+            android:layout_toLeftOf="@+id/otile23"
+            android:src="@drawable/blank" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnNewGame"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="22dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/otile33"
+            android:layout_width="85dp"
+            android:layout_height="135dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/blank" />
+
+        <ImageView
+            android:id="@+id/otile32"
+            android:layout_width="85dp"
+            android:layout_height="135dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="41dp"
+            android:layout_toLeftOf="@+id/otile33"
+            android:src="@drawable/blank" />
+
+        <ImageView
+            android:id="@+id/otile31"
+            android:layout_width="85dp"
+            android:layout_height="135dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="23dp"
+            android:src="@drawable/blank" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

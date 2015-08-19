@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_options"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top" >
+
+    <ImageView
+        android:id="@+id/dialogbox"
+        android:layout_width="300dp"
+        android:layout_height="270dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="center"
+        android:src="@drawable/dialogbox" />
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AboutUs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Reset Stats"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:id="@+id/soundToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/Reset"
+        android:layout_marginTop="25dp"
+        android:text="ToggleButton"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/soundText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/soundToggle"
+        android:layout_toLeftOf="@+id/soundToggle"
+        android:text="Sound: "
+        android:layout_marginBottom="12dp"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/shakeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/shakeToggle"
+        android:layout_toLeftOf="@+id/shakeToggle"
+        android:text="Shake: "
+        android:layout_marginBottom="12dp"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:id="@+id/shakeToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/soundToggle"
+        android:layout_below="@+id/soundToggle"
+        android:layout_marginTop="15dp"
+        android:text="ToggleButton"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/AboutUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shakeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="About Us"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

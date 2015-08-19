@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/blankback"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/toast" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="1 - 0"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/playerFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/score"
+        android:layout_toLeftOf="@+id/score"
+        android:src="@drawable/xanim0040" />
+
+    <ImageView
+        android:id="@+id/playerSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/score"
+        android:layout_toRightOf="@+id/score"
+        android:src="@drawable/oanim0040" />
+
+    <TextView
+        android:id="@+id/draws"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="Draws: 1"
+        android:textColor="#4C4C4C"
+        android:textSize="15sp" />
+
+</RelativeLayout>
